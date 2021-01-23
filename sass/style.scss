@@ -57,7 +57,17 @@
 @media only screen and (max-width: 375px) {
   #special-area {
     .item {
+      width: 140px;
+    }
+  }
+}
+
+// responsive for mobile 
+@media only screen and (max-width: 320px) {
+  #special-area {
+    .item {
       width: 120px;
     }
   }
 }
+
