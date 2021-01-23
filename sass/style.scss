@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+
+/*  style scss template  */
+
+/*  import variables etc..  */
+@import "./variable.scss";
+@import "./global.scss";
+@import "./typography.scss";
+@import "./color.scss";
+@import "./top-sale.scss";
+
+// special price area
+
+#special-area {
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    // background-color: greenyellow;
+    // flex-wrap: wrap;
+  }
+
+  .item {
+    width: 230px;
+    margin: auto;
+    flex-grow: 1;
+  }
+}
+
+// responsive for leptop
+@media only screen and (max-width: 768px) {
+  #special-area {
+    .item {
+      width: 150px;
+    }
+  }
+}
+
+// responsive for mobile 
+@media only screen and (max-width: 425px) {
+  #special-area {
+    .item {
+      width: 110px;
+    }
+  }
+  #top-sale {
+    .owl-carousel .owl-nav button.owl-prev span {
+      margin-left: -1rem;
+    }
+    .owl-carousel .owl-nav button.owl-next span {
+      margin-right: -1rem;
+    }
+  }
+}
+
+// responsive for mobile 
+@media only screen and (max-width: 375px) {
+  #special-area {
+    .item {
+      width: 120px;
+    }
+  }
+}

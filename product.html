@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jquery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- font awsome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- main style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- links style files -->
+    <link rel="stylesheet" href="./links/css_links.css">
+    <title>Hello, world!</title>
+</head>
+
+<body class="bg-light">
+
+
+    <!-- main section navbar -->
+    <main>
+       <!-- header info section -->
+    <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
+        <p class="font-rale font-12 text-black-50 m-0">Jordan 430-985 Eleifend St. Duluth Washington 92611 (427)
+          930-5255</p>
+        <div class="font-rale font-14 d-flex">
+          <!-- login or register button -->
+          <div>
+            <a href="" class="border-right borderleft px-3 text-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Please Login Now!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form method="POST" action="">
+                      <div class="mb-3">
+                        <label for="Username" class="col-form-label">Username</label>
+                        <input type="email" class="form-control" id="email" name="username" placeholder="Email" required>
+                      </div>
+                      <div class="mb-3">
+                        <label for="Password" class="col-form-label">Password</label>
+                        <input type="password" class="form-control" id="psw" name="psw" placeholder="Password" required>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="check" required>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Remember me
+                        </label>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Login Now</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end button  -->
+          <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
+        </div>
+      </div>
+        <nav class="navbar navbar-expand-lg navbar-dark color-s-bg">
+            <div class="container">
+                <a class="navbar-brand active" aria-current="page" href="./index.html">Shoping Mobiles</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav m-auto rubik">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">On-Sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./product.html">Categery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./product.html">Conpney</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comming Soon</a>
+                        </li>
+                    </ul>
+                    <form action="" class="font-14 raleway">
+                        <a href="./cart.html" class="py-2 rounded-pill color-p-bg shadow-sm">
+                            <span class="font-16 px-2 text-white"><i class="fa fa-cart-plus"
+                                    aria-hidden="true"></i></span>
+                            <span class="font-14 px-3 py-2 text-dark bg-light rounded-pill">0</span></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </main>
+    <!-- start #main-site -->
+    <main id="main-site">
+
+        <!--   product detailes area -->
+        <section id="product" class="py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 bg-light">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item"><img src="./assets/products/1.png" alt="product" class="img-fluid"></div>
+                            <div class="item"><img src="./assets/products/1.png" alt="product" class="img-fluid"></div>
+                            <div class="item"><img src="./assets/products/1.png" alt="product" class="img-fluid"></div>
+                            <div class="item"><img src="./assets/products/1.png" alt="product" class="img-fluid"></div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 mt-md-5">
+                        <h4 class="rubik font-20">Samsung Galesy 10</h4>
+                        <p class="mb-2 text-muted text-uppercase small">by samsung</p>
+                        <div class="rating font-12 text-warning">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                        </div>
+                    
+                        <p><span class="mr-1 text-danger rubik font-20"><strong>$12.99</strong></span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, corrupti orem ipsum dolor
+                            sit amet consectetur adipisicing elit. Dolorem, corrupti..</p>
+                        <div class="table-responsive">
+                            <table class="table table-sm table-borderless mb-0">
+                                <tbody>
+                                    <tr>
+                                        <th class="pl-0 w-25" scope="row"><strong>Model</strong></th>
+                                        <td>Shirt 5407X</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="pl-0 w-25" scope="row"><strong>Color</strong></th>
+                                        <td>Black</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="pl-0 w-25" scope="row"><strong>Delivery</strong></th>
+                                        <td>india, Delhi</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr>
+                        <div class="table-responsive mb-2">
+                            <table class="table table-sm table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td class="pl-0 pb-0 w-25">Quantity</td>
+                                        <td class="pb-0">Select size</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="qty d-flex raleway col-12 col-md-8">
+                                                <button class="qty-up border bg-white" data-id="pro1"><i
+                                                        class="fas fa-angle-up"></i></button>
+                                                <input type="number" data-id="pro1"
+                                                    class="qty_input border px-2 w-100 bg-white" disabled value="1"
+                                                    placeholder="1">
+                                                <button data-id="pro1" class="qty-down border bg-white"><i
+                                                        class="fas fa-angle-down"></i></button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="mt-1">
+                                                <div class="form-check form-check-inline pl-0">
+                                                    <input type="radio" class="form-check-input" id="small"
+                                                        name="materialExampleRadios" checked>
+                                                    <label
+                                                        class="form-check-label small text-uppercase card-link-secondary"
+                                                        for="small">4/32 GB</label>
+                                                </div>
+                                                <div class="form-check form-check-inline pl-0">
+                                                    <input type="radio" class="form-check-input" id="medium"
+                                                        name="materialExampleRadios">
+                                                    <label
+                                                        class="form-check-label small text-uppercase card-link-secondary"
+                                                        for="medium">4/64 GB</label>
+                                                </div>
+                                                <div class="form-check form-check-inline pl-0">
+                                                    <input type="radio" class="form-check-input" id="large"
+                                                        name="materialExampleRadios">
+                                                    <label
+                                                        class="form-check-label small text-uppercase card-link-secondary"
+                                                        for="large">6/128 GB</label>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-danger mr-1 mb-2 col-6 rounded-0">Buy now</button>
+                            <button type="button" class="btn btn-warning col-6 mr-1 mb-2"><i
+                                    class="fas fa-shopping-cart pr-2 rounded-0"></i> Add to cart</button>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <h6 class="rubik">Product Description</h6>
+                        <hr>
+                        <p class="raleway font-14">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+                            inventore vero numquam error est ipsa, consequuntur temporibus debitis nobis sit, delectus
+                            officia ducimus dolorum sed corrupti. Sapiente optio sunt provident, accusantium eligendi
+                            eius reiciendis animi? Laboriosam, optio qui? Numquam, quo fuga. Maiores minus, accusantium
+                            velit numquam a aliquam vitae vel?</p>
+                        <p class="raleway font-14">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+                            inventore vero numquam error est ipsa, consequuntur temporibus debitis nobis sit, delectus
+                            officia ducimus dolorum sed corrupti. Sapiente optio sunt provident, accusantium eligendi
+                            eius reiciendis animi? Laboriosam, optio qui? Numquam, quo fuga. Maiores minus, accusantium
+                            velit numquam a aliquam vitae vel?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   !product  -->
+
+
+        <!-- Top Sale -->
+        <section id="top-sale">
+            <div class="container py-2 bg-light">
+                <h4 class="rubik font-20">Top Sale</h4>
+                <hr>
+                <!-- Owl-carousel top sale  -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item py-2 border color-card">
+                        <div class="product rubik">
+                            <a href=""><img src="./assets/products/1.png" alt="mobile" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6 class="">samsug galexy nord 5</h6>
+                                <div class="rating font-12 text-warning">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>$251</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-12">buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 border color-card">
+                        <div class="product rubik">
+                            <a href=""><img src="./assets/products/2.png" alt="mobile" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6 class="">samsug galexy nord 5</h6>
+                                <div class="rating font-12 text-warning">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>$251</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-12">buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 border color-card">
+                        <div class="product rubik">
+                            <a href=""><img src="./assets/products/3.png" alt="mobile" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6 class="">samsug galexy nord 5</h6>
+                                <div class="rating font-12 text-warning">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>$251</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-12">buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 border color-card">
+                        <div class="product rubik">
+                            <a href=""><img src="./assets/products/4.png" alt="mobile" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6 class="">samsug galexy nord 5</h6>
+                                <div class="rating font-12 text-warning">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>$251</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-12">buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 border color-card">
+                        <div class="product rubik">
+                            <a href=""><img src="./assets/products/5.png" alt="mobile" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6 class="">samsug galexy nord 5</h6>
+                                <div class="rating font-12 text-warning">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>$251</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-12">buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 border color-card">
+                        <div class="product rubik">
+                            <a href=""><img src="./assets/products/6.png" alt="mobile" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6 class="">samsug galexy nord 5</h6>
+                                <div class="rating font-12 text-warning">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>$251</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-12">buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 border color-card">
+                        <div class="product rubik">
+                            <a href=""><img src="./assets/products/8.png" alt="mobile" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6 class="">samsug galexy nord 5</h6>
+                                <div class="rating font-12 text-warning">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>$251</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-12">buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 border color-card">
+                        <div class="product rubik">
+                            <a href=""><img src="./assets/products/1.png" alt="mobile" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6 class="">samsug galexy nord 5</h6>
+                                <div class="rating font-12 text-warning">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>$251</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-12">buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item py-2 border color-card">
+                        <div class="product rubik">
+                            <a href=""><img src="./assets/products/5.png" alt="mobile" class="img-fluid"></a>
+                            <div class="text-center">
+                                <h6 class="">samsug galexy nord 5</h6>
+                                <div class="rating font-12 text-warning">
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                    <span><i class="fas fa-star"></i></span>
+                                </div>
+                                <div class="price py-2">
+                                    <span>$251</span>
+                                </div>
+                                <button type="submit" class="btn btn-warning font-12">buy now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- !Top Sale -->
+
+    </main>
+    <!-- !start #main-site -->
+
+    <!-- start #footer -->
+    <footer id="footer" class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="font-rubik font-size-20">Mobile Shopee</h4>
+                    <p class="font-14 raleway text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Repellendus, deserunt.</p>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <h4 class="font-rubik font-size-20">Information</h4>
+                    <div class="d-flex flex-column flex-wrap">
+                        <a href="#" class="raleway font-14 text-white-50 pb-1">About Us</a>
+                        <a href="#" class="raleway font-14 text-white-50 pb-1">Delivery Information</a>
+                        <a href="#" class="raleway font-14 text-white-50 pb-1">Privacy Policy</a>
+                        <a href="#" class="raleway font-14 text-white-50 pb-1">Terms & Conditions</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-12">
+                    <h4 class="font-rubik font-size-20">Newslatter</h4>
+                    <form class="form-row d-flex">
+                        <div class="col-8">
+                            <input type="text" class="form-control rounded-0" placeholder="Email *">
+                        </div>
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-danger mb-2 rounded-0">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright text-center color-p-bg text-white py-2">
+        <p class="raleway font-14"> Copyrights &copy; 2020. Desing By <a href="#" class="color-s">Shahnawaz
+                Ahmed</a>
+        </p>
+    </div>
+    <!-- !start #footer -->
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Owl Carousel Js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+    <!--  isotope plugin cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+
+
+    <!-- main js file   -->
+    <script src="./index.js"></script>
+</body>
+</html>

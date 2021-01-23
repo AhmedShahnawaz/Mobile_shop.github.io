@@ -1,0 +1,52 @@
+/* global classes */
+body{
+    background-color: rgb(216, 216, 216);
+
+
+}
+
+button, button:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+button:hover{
+   box-shadow: 5px 10px #888888;
+}
+
+
+
+a{
+    // color: rgb(241, 241, 241)!important;
+    text-decoration: none;
+
+    :hover{
+        color: rgb(255, 255, 255);
+        transition: .3s ease-in-out;
+
+    }
+}
+
+
+.m_a{
+    margin: auto;
+}
+
+.flex_box{
+    display: flex;
+    justify-content: center;
+    align-items: column;
+    flex-wrap: wrap;
+    flex-direction: space-around;
+}
+
+// #footer{
+//     a{
+     
+//       :hover{
+//         color: rgb(255, 255, 255)!important;
+//         transition: .3s ease-in-out;
+
+//     }
+//     }
+// }

@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&family=Raleway&family=Rubik&display=swap");
+/*  style scss template  */
+/*  import variables etc..  */
+/*  variables scss  */
+/* global classes */
+body {
+  background-color: #d8d8d8; }
+
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important; }
+
+button:hover {
+  box-shadow: 5px 10px #888888; }
+
+a {
+  text-decoration: none; }
+  a :hover {
+    color: white;
+    transition: .3s ease-in-out; }
+
+.m_a {
+  margin: auto; }
+
+.flex_box {
+  display: flex;
+  justify-content: center;
+  align-items: column;
+  flex-wrap: wrap;
+  flex-direction: space-around; }
+
+/*  typography classes */
+.baloo {
+  font-family: "Baloo Thambi 2", cursive; }
+
+.raleway {
+  font-family: "Raleway", cursive; }
+
+.rubik {
+  font-family: "Rubik", cursive; }
+
+.font-12 {
+  font-size: 12px; }
+
+.font-14 {
+  font-size: 14px; }
+
+.font-16 {
+  font-size: 16px; }
+
+.font-20 {
+  font-size: 20px; }
+
+.color-p {
+  color: #0d307e; }
+
+.color-s {
+  color: #3ba5c0; }
+
+.color-y {
+  color: #e4e40a; }
+
+.color-p-bg {
+  background-color: #0d307e; }
+
+.color-s-bg {
+  background-color: #3ba5c0; }
+
+.color-y-bg {
+  background-color: #e4e40a; }
+
+/* top sale owl carousel style */
+/*  top sale section buttons left to right   */
+#top-sale .owl-carousel .item .product a {
+  overflow: hidden; }
+
+#top-sale .owl-carousel .item .product img {
+  transition: transform .5s ease; }
+
+#top-sale .owl-carousel .item .product img:hover {
+  transform: scale(1.1); }
+
+#top-sale .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none; }
+
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+  left: 0; }
+
+#top-sale .owl-carousel .owl-nav button.owl-prev span,
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #0d307e;
+  padding: 0 1rem;
+  background-color: none; }
+
+#top-sale .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem; }
+
+#top-sale .owl-carousel .owl-nav button.owl-next {
+  right: 0; }
+
+#top-sale .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem; }
+
+#top-sale .owl-carousel .owl-nav button.owl-next span:hover,
+#top-sale .owl-carousel .owl-nav button.owl-prev span:hover {
+  background: none; }
+
+#special-price .grid .product img:hover {
+  transition: transform .5s ease; }
+  #special-price .grid .product img:hover:hover {
+    transform: scale(1.1); }
+
+#special-area .grid-item {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between; }
+
+#special-area .item {
+  width: 230px;
+  margin: auto;
+  flex-grow: 1; }
+
+@media only screen and (max-width: 768px) {
+  #special-area .item {
+    width: 150px; } }
+
+@media only screen and (max-width: 425px) {
+  #special-area .item {
+    width: 110px; }
+  #top-sale .owl-carousel .owl-nav button.owl-prev span {
+    margin-left: -1rem; }
+  #top-sale .owl-carousel .owl-nav button.owl-next span {
+    margin-right: -1rem; } }
+
+@media only screen and (max-width: 375px) {
+  #special-area .item {
+    width: 120px; } }

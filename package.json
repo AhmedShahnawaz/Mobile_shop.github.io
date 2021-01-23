@@ -1,0 +1,14 @@
+{
+  "name": "shop_mobile",
+  "version": "1.0.0",
+  "description": "e-commerce mobile store",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass sass/style.scss css/style.css -w"
+  },
+  "author": "shahnawaz ahmed",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
