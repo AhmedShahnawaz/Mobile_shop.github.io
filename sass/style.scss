@@ -16,12 +16,8 @@
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    // background-color: greenyellow;
-    // flex-wrap: wrap;
   }
-
   .item {
-    width: 230px;
     margin: auto;
     flex-grow: 1;
   }
@@ -31,7 +27,7 @@
 @media only screen and (max-width: 768px) {
   #special-area {
     .item {
-      width: 150px;
+      // width: 150px;
     }
   }
 }
@@ -40,7 +36,7 @@
 @media only screen and (max-width: 425px) {
   #special-area {
     .item {
-      width: 110px;
+      // width: 110px;
     }
   }
   #top-sale {
@@ -53,21 +49,4 @@
   }
 }
 
-// responsive for mobile 
-@media only screen and (max-width: 375px) {
-  #special-area {
-    .item {
-      width: 140px;
-    }
-  }
-}
-
-// responsive for mobile 
-@media only screen and (max-width: 320px) {
-  #special-area {
-    .item {
-      width: 120px;
-    }
-  }
-}
 
